@@ -6,24 +6,39 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Then I'll be able to explicitly manage changes made by other people before adding it to my version
+    Then I'll be able to explicitly manage changes made by other people before
+    adding it to my version
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    You fork someone's GitHub repository. You clone from GitHub to your local git
+    repository or from local to local. You branch inside a repository to add and test
+    new features before commiting them to the main version.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    In case you want have an access to changes made in github repository
+    offline
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    By using FTP or email or personal interaction. Making changes that you want to
+    test out but also keep working on the main functionality would be tiresome since you
+    would have to manually create two different copies of the source code. Also
+    you would have to manually manage and track all the changes that are being made
+    by your collaborators and you. It would be easier to manage small projects with 2-3 persons
+    in the team who can work in the same location at the same time and review
+    their code at the spot.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    You can work directly on master if you work on a project alone or the project is
+    relatively small and there won't be much changes that would introduce a mess or break
+    your program. However, when your team and/or project gets bigger making changes in a
+    separate branches will help to insure that the code in the master is at working state.
+    After changes in branches are reviewed by the team they may be merged into master,
+    which helps to avoid conflicts in code that is modified by different people.

@@ -1,52 +1,52 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-git creates a hidden folder .git where it stores the history of changes made to this repository
+    git creates a hidden folder .git where it stores the history of changes made to this repository
 
-to be able to track commits, roll back, etc.
+    to be able to track commits, roll back, etc.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-working directory contains files, repository contains commits, staging area helps to
-pack multiple files in one commit or commit them one by one.
+    working directory contains files, repository contains commits, staging area helps to
+    pack multiple files in one commit or commit them one by one.
 
-also it acts like a buffer where you can add or remove files to complect the commit
+    also it acts like a buffer where you can add or remove files to complect the commit
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-If I've made more than one logical change since committing, I can add all
-the changes affected by the first logical change to the staging area, then
-commit those without committing the others.
+    If I've made more than one logical change since committing, I can add all
+    the changes affected by the first logical change to the staging area, then
+    commit those without committing the others.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-when you want to test out a new feature but don't want to change the main app functionality
-yet
+    when you want to test out a new feature but don't want to change the main app functionality
+    yet
 
-you can add a new branch, switch to it, add desired changes and when everything works out and
-you're ready to introduce a new feature to production you can merge two branches together
-and all changes will appear in master branch
+    you can add a new branch, switch to it, add desired changes and when everything works out and
+    you're ready to introduce a new feature to production you can merge two branches together
+    and all changes will appear in master branch
 
 How do the diagrams help you visualize the branch structure?
 
-you can see at what state of master the new branch was created and see what commits have been
-made in that brach as well as the commits made in master
-you can see all branches
+    you can see at what state of master the new branch was created and see what commits have been
+    made in that brach as well as the commits made in master
+    you can see all branches
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-changes introduced in both branches are now present in main program code
+    changes introduced in both branches are now present in main program code
 
-because the concept is similar to a tree
+    because the concept is similar to a tree
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 
-Automatic merges help you save time, but they can't resolve changes that have been
-made for the same code.
+    Automatic merges help you save time, but they can't resolve changes that have been
+    made for the same code.
 
-Manual merging requires more time: to analyze someone's code, to talk to the person,
-to refactor. But in the end we get the right working verson.
+    Manual merging requires more time: to analyze someone's code, to talk to the person,
+    to refactor. But in the end we get the right working verson.
